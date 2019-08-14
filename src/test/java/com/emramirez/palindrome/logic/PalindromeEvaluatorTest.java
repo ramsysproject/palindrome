@@ -18,10 +18,10 @@ public class PalindromeEvaluatorTest {
         String notPalindrome = "house";
 
         // act
-        boolean result = palindromeEvaluator.evaluate(notPalindrome);
+        String result = palindromeEvaluator.evaluate(notPalindrome);
 
         // assert
-        assertThat("Expected false, but found otherwise", result, equalTo(false));
+        assertThat("Expected false, but found otherwise", result, equalTo("false"));
     }
 
     @Test
@@ -30,9 +30,9 @@ public class PalindromeEvaluatorTest {
         String palindrome = "madam";
 
         // act
-        boolean result = palindromeEvaluator.evaluate(palindrome);
+        String result = palindromeEvaluator.evaluate(palindrome);
 
         // assert
-        assertThat("Expected true, but found otherwise", result, equalTo(true));
+        assertThat("Expected true, but found otherwise", result, equalTo("true"));
     }
 }
